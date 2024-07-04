@@ -42,7 +42,7 @@ def play(n):
         print("winner is A")
     elif lst[0]==lst[4]==lst[8]=='A' :
         print("winner is A")
-    elif lst[2]==lst[4]==lst[8]=='A' :
+    elif lst[2]==lst[4]==lst[6]=='A' :
         print("winner is A")
     elif lst[0]==lst[1]==lst[2]=='B':
         print ("winner is B")
@@ -58,7 +58,7 @@ def play(n):
         print("winner is B")
     elif lst[0]==lst[4]==lst[8]=='B' :
         print("winner is B")
-    elif lst[2]==lst[4]==lst[8]=='B' :
+    elif lst[2]==lst[4]==lst[6]=='B' :
         print("winner is B")
 
 
