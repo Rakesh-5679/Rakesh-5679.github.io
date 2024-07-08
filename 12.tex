@@ -1,0 +1,225 @@
+documentclass[conference]{IEEEtran} 
+\IEEEoverridecommandlockouts 
+\usepackage{cite} 
+\usepackage{url} 
+\usepackage{amsmath,amssymb,amsfonts} 
+\usepackage{algorithmic} 
+\usepackage{graphicx} 
+\usepackage{textcomp} 
+\usepackage{xcolor} 
+\usepackage{stfloats} 
+\usepackage{multicol} 
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em 
+T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}} 
+\begin{document} 
+\title{COVID-19 and Comorbidities Pandemic Effects: A Review \\} 
+\author{\IEEEauthorblockN{Mamatha.L} 
+\IEEEauthorblockA{ Department of Computer Science and Engineering, SIET,TUMKUR}} 
+\maketitle 
+\begin{abstract} 
+%COVID-19 is a contagious disease caused by a virus,the Severe Acute Repository Syndrome coronavirus -2 
+(SARS-CoV-2). The first known case was identified in Wuhan, China, in December 2019.The co-existence of 
+two or more illness or disorders in a single patient. This study received the Comorbidities and vulnerability 
+among people pre and post COVID-19. An advanced database search is made related to modern technology 
+towards COVID-19, In recent year, many health cares have increased and attracted attention, to make the issue 
+serious by limited data healthy many techniques like Machine Learning and modern computational intelligence 
+are applied to provide the disease. 
+A virus known as Severe Acute Repository Syndrome Coronavirus-2 (SARS-CoV-2) is the source of the 
+infectious disease COVID-19. The first case of COVID – 19 is recorded in Wuhan, China, in December 2019. If 
+a person had COVID-19 and another disease or condition, then COVID-19 and other diseases would be 
+considered comorbidities. Researchers began studying the link between people with certain comorbidities and 
+the COVID-19 disease after the start of the pandemic. This paper gives reviews on the effects of COVID-19 and 
+its comorbidities. Machine learning and Deep learning techniques are used to detect the severity of COVID-19 
+and the comorbidities from the existing literature work. 
+\end{abstract} 
+\begin{IEEEkeywords} 
+COVID-19, Comorbidity, Deep Learning,Machine Learning, SARS-CoV-2. 
+\end{IEEEkeywords} 
+\section{Introduction} 
+\IEEEPARstart{T}he disease known as COVID-19 is mostly caused by the SARS-CoV-2 virus, which was 
+discovered in China in December 2019. As a result, it spread fast around the world. 26 
+COVID-19 spreads through air-borne patients containing the virus or the droplets. The Transmission can occur 
+through the contaminated fluids in the eyes, nose or mouth, and, rarely, via contaminated surfaces. 
+COVID-19 affects different people in different ways. Most infected people will develop mild to moderate 
+illness and recover without hospitalization. The symptoms of this disease can be categorized into three types 
+such as most common, less common, and serious problems.. The Serious symptoms are difficulty in breathing 
+or shortness of breath, loss of speech or mobility, or confusion and chest pain. Fig. 1 shows the three categories 
+of symptoms of COVID-19 disease. 
+The Covid-19 patient seeks immediate medical attention if he has serious symptoms. People with mild 
+symptoms who are otherwise healthy should manage their symptoms at home. On average it takes 5–6 days 
+from when someone is infected with the virus for symptoms to show, however it can take up to 14 days. 
+This disease weakens the body's functions, making it more challenging for the body to fight off invaders like 
+viruses and bacteria and to get rid of the disease's main cause. It may be extremely stressful on the body to have 
+two or more diseases present at once, and the affected individual may take longer to recover than someone 
+without comorbidity. 
+COVID-19 spreads through, air-borne patients containing the virus or the droplets. Transmission can occur 
+through the contaminated surface. 
+The Transmission can occur through the contaminated fluids in the eyes, nose or mouth, and, rarely, via 
+contaminated surfaces. COVID-19 testing through swab as well as rRT-PCR and CT scan methods. 
+The Table 1 is the COVID cases (43452164)and Death cases (525116) in India (March 2020 to October 2022). 
+\begin{table*} 
+\caption{COVID cases in States / Union Territories} 
+\label{tab:t1} 
+\centering 
+\begin{tabular} 
+{p{0.10\linewidth} p{0.10\linewidth}p{0.10\linewidth}p{0.10\linewidth}p{0.10\linewidth}p{0.10\linewidth} 
+p{0.10\linewidth}p{0.10\linewidth}p{0.10\linewidth}p{0.10\linewidth}p{0.10\linewidth} p{0.10\linewidth} 
+\hline 
+\textbf{Sl.No.} & \textbf{COVID Cases} & \textbf{Death Cases} & \textbf{Result}\\ 
+\hline 
+Yamaç \emph{et al.} \cite{yamac2021convolutional} 2021 & 
+SVM, KNN, and CRC & X-ray images of QaTa-Cov19 & Sensitivity: 98\% 
+\newline 
+Specificity:95\% 
+\end{tabular} 
+\end{table*} 
+\begin{figure}[htp] 
+\centering 
+\includegraphics[width=8cm,height=9 
+cm]{Sym.JPG} \caption{Symptoms of COVID-19 Effects} 
+\label{fig:f1} 
+\end{figure} 27 
+\subsection*{A. COMORBIDITIES} 
+Comorbidities are the presence of two or more diseases in the same person. In the case of COVID-19, if a 
+person had COVID-19 and another disease, then COVID-19 and the other condition would be comorbidities. 
+So, for example, if a person had diabetes and then developed COVID-19, they would have two diseases—or 
+comorbidities. 
+\newline 
+Table 2 is existing diagnosis algorithm for comorbidities are incorporated. 
+\begin{figure*}[htp] 
+\centering 
+\includegraphics[width=14cm,height=8cm]{Suresh_2.png} 
+\caption{Death Rate by Comorbidities diseases} 
+\label{fig:f2} 
+\end{figure*} 
+\subsection*{B. DIAGNOSIS ALGORITHMS} 
+Table 3 is existing diagnosis algorithm for diseases are incorporated. 
+\begin{table*} 
+\caption{Existing diagnosis algorithm for comorbidities} 
+\label{tab:t1} 
+\centering 
+\begin{tabular} 
+{p{0.20\linewidth} p{0.15\linewidth}p{0.20\linewidth}p{0.20\linewidth}p{0.20\linewidth}} 
+\hline 
+\textbf{Author [Reference] Year} & \textbf{Model / Classifier} & \textbf{Dataset} & \textbf{Result}\\ 
+%\textbf{Age in Years} & 
+\hline 
+Yamaç \emph{et al.} \cite{yamac2021convolutional} 2021 & 
+SVM, KNN, and CRC & X-ray images of QaTa-Cov19 & Sensitivity: 98\% 
+\newline 
+Specificity:95\% 
+\\\\ 
+Wanyan \emph{et al.} \cite {wanyan2020relational} 2021 & DL/ML - Heterogeneous Graph model and LSTM 
+& Electronic Health Records & Training set Accuracy:0.935 
+\newline 
+Test set Accuracy:0.847 
+\\\\ 
+Liu \emph{et al.} \cite {liu2020risk} 2020 & Risk factors of infection in COVID-19: RT-PCR & 11580 of 
+persons & RR: 5.29, 95\%CI: 3.76-7.46 
+\\\\ 
+Gammulle \emph{et al.} \cite {gammulle2021multi} 2021 & 
+DL-SE-ResNet-50 & 307 patients of radiomics & Accuracy:86.63\% 
+\\\\ 
+Pathak \emph{et al.} \cite {pathak2020deep} 2020 & AI- CNN, ANN & 2842 CT Scan images & 
+Accuracy:1.79, AUC:1.53 
+\newline f-measure:1.84, Sensitivity:1.93 
+\newline 
+Specificity:0.44, recall:1.64 
+\newline 
+Precision:1.53 
+\\\\ 
+Han \emph{et al.} \cite {han2020accurate} 2020 & 28 
+DL/ML - CatBoost / SVM / NB / LR & EMRs: Test 1 (753) 
+Test 2(2123) 
+& Accuracy:97.6, AUC:99 
+\newline f1 score:97.9,Precision:97.9 
+\newline 
+Cohen Kappa:95.7, recall:97.9 
+\\\\ 
+\hline 
+\end{tabular} 
+\end{table*} 
+\begin{table*} 
+\caption{Existing diagnosis algorithm for Diseases} 
+\label{tab:t2} 
+\centering 
+\begin{tabular} 
+{p{0.20\linewidth} p{0.15\linewidth}p{0.20\linewidth}p{0.20\linewidth}p{0.20\linewidth}} 
+\hline 
+\textbf{Author [Reference] Year} & \textbf{Model / Classifier} & \textbf{Dataset} & \textbf{Result}\\ 
+%\textbf{Age in Years} & 
+\hline 
+Mehrabadi \emph{et al.} \cite{mehrabadi2021detection} 2021& 
+DL – CNN / LSTM & 77972 samples of Age & ACU: 0.81 
+\\\\ 
+Singh \emph{et al.} \cite {singh2021ediapredict} 2021 & ML - XGBoost, Decision Tree, Random Forest, NN 
+& PIMA Indian Diabetes Data 9 attributes & Accuracy:92.21\% 
+\\\\ 
+Karboub \emph{et al.} \cite {karboub2020automated} 2022 & AI-CNN, SVM, KNN, NB & 72000 ECG Beats 
+& Accuracy:99.2\% 
+\\\\ 
+Handy \emph{et al.} \cite {Handy923} 2022 & 
+logistic and Cox Regreession & 972971 Female and CHA samples & Odds Ratio:95\% 
+\\\\ 
+Aburuz \emph{et al.} \cite {aburuz2022clinical} 2022 & logistic Regression Analysis & 3296 patients Age & 
+Odds Ratio:2.87 
+\\\\ 
+Yu \emph{et al.} \cite {yu2020role} 2021 & 
+AI - CatBoost / SVM / NB / LR & EMRs: Test 1 (753) 
+\newline 
+Test 2(2123) 
+& T1-Accuracy: 84.7\% 
+\newline 
+T2-Accuracy:96.7\% 
+\\\\ 
+\hline 
+\end{tabular} 
+\end{table*} 29 
+\section{ Literature Review } 
+In literature reviews severity of COVID-19 and comorbid effects and diagnosis algorithms are reviewed and 
+explained. 
+\newline 
+Devarajan \emph{et al.} \cite {devarajan2021healthcare} investigated on the effect of the COVID-19 flare-up 
+on medical services tasks and creates AI based anticipating models utilizing time series information to predict 
+the movement of COVID-19 and further utilizing prescient examination to all the more likely oversee medical 
+care activities. 
+Gu \emph{et al.} \cite {gu2021epidemic} proposed novel plague risk evaluation technique in light of the 
+granular information gathered by correspondence stations. The calculation scourge hazard of the 
+correspondence stations in various stretches by consolidating the quantity of tainted people and the manner in 
+which they go through the stations has been examined. 
+Li \emph{et al.} \cite {li2021rapid} the component determination strategy in view of stepwise relapse is utilized 
+to handle the COVID-19 pandemic informational index from January 13,2020 to January 16, 2021 in the United 
+States. After measurable testing, the Auto Regressive Integrated Moving Average (ARIMA) model and the 
+better ARIMAX model in view of element determination rapidly settles the improvement pattern of the 
+COVID-19 pestilence in the US. 
+Elahraf \emph{et al.} \cite {elahraf2021service} proposed a help situated structure that permits dynamic piece 
+and the executives of such quiet consideration plans expecting a fitting information base and accessibility of 
+web administrations points of interaction of the fundamental frameworks of guardians and specialist 
+organizations. 
+Feil-Seifer \emph{et al.} \cite {feil2020next} propose Human-Robot Interaction Research (HRI) research acted 
+before long will be changed in essentially various ways; the powerlessness to perform or expect the future 
+presentation of in-person human subjects research, particularly research including material or multiparty 
+cooperation, will change both the prevailing systemic methods utilized by HRI specialists and the very research 
+questions that the field decides to and can address. 
+Khan \emph{et al.} \cite {khan2020prediction} foresee whether the cesarean segment is important with the 
+assistance of information mining and subsequently, expanding the security of the mother and infant during and 
+after labor by keeping away from superfluous cesarean area has been tended to. To accomplish the goal, three 
+unique gathering forecast models in view of XGBoost, AdaBoost and Catboost have been created. 
+Jokinen \emph{et al.} \cite {jokinen2021detection} utilized atomic elements reproductions in combined solvents as 
+one with virtual screening to distinguish little particles that could be possible inhibitors of S protein in turn ACE2 
+collaboration. Likewise, an original conformity of the S protein was found that could be balanced out by little 
+particles to restrain connection to ACE2. 
+Kyono \emph{et al.} \cite {kyono2021exploiting} propose a model determination strategy for utilizing model 
+expectations on an objective space without names by taking advantage of the area invariance of causal design. We 
+expect or gain a causal chart from the source space and select models that produce anticipated disseminations in the 
+objective space that have the most elevated probability of accommodating our causal diagram. 30 
+\section{Conclusions} 
+Our meta- analysis showed that diabetes increases the mortality of patients with COVID-19. Even since COVIS-19 
+had occur in environment may her infected by SAR-COV-2. The rate of infection is detected by virus health data and 
+cough detectors and even by long health detectors.. Many biomarkers are used to identify the condition of the 
+patients. In this paper, COVID-19 was detected by different methods like Deep Learning Network Chest X-ray 
+images and by applying a proposed weighted as arranging method which gives importance to different sensitivities 
+of DL models on different class types. 
+\bibliographystyle{ieeetr} 
+\bibliography{reference} 
+\end{document}
