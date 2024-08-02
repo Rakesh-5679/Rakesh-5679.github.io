@@ -1,0 +1,188 @@
+1.
+\documentclass{article}
+\usepackage{fancyhdr}
+\usepackage{lipsum} % for dummy text
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{Title of Document}
+\fancyfoot[L]{Institute Name}
+\fancyfoot[R]{\thepage}
+
+\begin{document}
+
+\section{Section 1}
+\lipsum[1] % Dummy text
+
+\section{Section 2}
+\lipsum[2] % Dummy text
+
+\end{document}
+
+2.
+\documentclass{article}
+\title{An abstract writting}
+\author{Nithin T L}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\begin{abstract}
+this document contains some basic LaTex code to create an abstract,it is useful during project report writing.
+\end{abstract}
+\end{document}
+
+3. Develp a latex script to create a simple title page of the vtu project report
+\documentclass[12pt,a4paper]{article}
+\usepackage{graphicx}
+\usepackage{geometry} 
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\geometry{a4paper, total={180mm,250mm},left=20mm,top=20mm}
+\begin{document}
+\begin{tcolorbox}[colframe=black,colback=white,boxrule=2pt,arc=0pt,outer arc=0pt]
+\begin {center}
+\textcolor{orange}{\large\textbf{VISVESVARAYA TECHNOLOGICAL UNIVERSITY}\\ "Jnana sangama", Belagavi-560014, Karnataka} \\
+\vspace{2mm} 
+\includegraphics[scale=0.4]{/home/student/Pictures/vtu.jpeg}\\ 
+\vspace{2mm} 
+\textcolor{red}{A REPORT}\\ 
+\textcolor{red}{ON}\\ 
+\textcolor{orange}{\textbf{SOCIAL CONNECT AND RESPONSIBILITY ACTIVITIES}}\\
+ {submitted in partial fulfillment of the requirements for the award of degree of }\\ 
+\vspace{5mm} 
+\textcolor{green}{\textbf{BACHELOR OF ENGINEERING}\\ 
+\textbf{COMPUTER SCIENCE AND ENGINEERING }}\\
+\vspace{5mm}
+\textcolor{blue}{\underline{Submitted By}}\\ 
+\textbf{NAME:VIVEKA G V} \\
+\textbf{USN:1SV22CS122} \\
+\vspace{5mm} 
+\textcolor{cyan}{\underline{{\textbf{Under the guidance of}}}}\\
+\textbf{MAMATHA}\\ 
+Assistant professor \\ 
+Dept of CSE \\ 
+\centering \includegraphics[scale=0.3]{/home/student/Pictures/logo.jpeg}\\  
+\textcolor{blue}{\textbf{Department of Computer Science and Enineering}}\\ 
+\textcolor{red}{\textbf{SHRIDEVI INSTITUTE OF ENGINEERING AND TECHNOLOGY}}\\{Affiliated to Visvesvaraya Technological University}\\ Sira road, Tumakuru-572106, Karnataka\\ 
+2024-2025 
+
+\end{center} 
+\end{tcolorbox}
+\end{document}
+
+4 .Develop a latex script to create the certificate page of the report
+
+\documentclass[a4paper,15pt]{article} 
+\usepackage[top=40mm, bottom=10mm, left=10mm, right=10mm]{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{fancyhdr} 
+\pagestyle{fancy}
+\fancyhead[c]{SHRIDEVI INSTITUTE OF ENGINEERING AND TECHNOLOGY} 
+\fancyfoot{\thepage}
+\begin{document}
+\begin{tcolorbox}[colframe=black,colback=white,boxrule=2pt,arc=0pt,outer arc=0pt]
+\centering
+\textcolor{blue}{\textbf{DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING}}\\
+\vspace{1mm}
+
+\vspace{1mm} 
+\textcolor{red}{\underline{\textbf{CERTIFICATE}}}\\
+\centering \includegraphics[scale=0.3]{/home/student/Pictures/logo.jpeg}\\ 
+\paragraph{} 
+This is to certify that the Social Connect and Responsibility activities have been successfully carried out by \textbf{VIVEKA G V} with USN:1SV22CS122 in partial fulfillment for the \textbf{SOCIAL CONNECT} course of Bachelor of Engineering in Computer Science and Engineering department of the \textbf{VISVESVARAYA TECHNOLOGICAL UNIVERSITY} Belgavi during the academic year 2023-2024. It is certified that all the corrections/suggestions indicated for internal assessments have been incorporated in the report. The Social Connect and Responsibility Activities Report has been approved as it satisfies the academic requirements in respect of \textbf{SOCIAL CONNECT} course of Bachelor of Engineering Degree.
+\begin{center} 
+\vspace{10mm} 
+\underline{\textbf{Signature of the Staff Coordinator}}\\
+\vspace{4mm} 
+
+\textcolor{red}{Associate Professor}\\ 
+SIET, Tumkur\\
+\vspace{10mm}
+\underline{\textbf{Signature of the H.O.D}}\\ 
+\vspace{3mm}
+
+\textcolor{red}{Associate Professor}\\ 
+SIET, Tumkur\\
+\end{center}
+\end{tcolorbox}
+\end{document}
+
+5. Develop a latex script to create a document that contains following table with table name
+
+\documentclass{book}
+
+\usepackage{graphicx}
+\usepackage{multirow}
+
+\begin{document}
+
+\begin{table}
+    \centering
+    
+    \caption{Student tables} 
+    \label{tab:student}
+    \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    \multirow{2}{*}{Sl.No} & \multirow{2}{*}{USN} & \multirow{2}{*}{Student name} & \multicolumn{3}{c|}{Marks} \\ \cline{4-6}
+    &&& Subject1 & Subject2 & Subject3 \\ \hline
+    1 & 1SV22CS100 & ARUN & 89 & 60 & 90 \\ \hline
+    2 & 1SV22CS200 & AJAY & 78 & 84 & 58 \\ \hline
+    3 & 1SV22CS300 & ANKITH & 67 & 85 & 59 \\ \hline
+    4 & 1SV22CS400 & ANIL & 100 & 75 & 67 \\ \hline
+    5 & 1SV22CS500 & ANKITH & 57 & 32 & 34 \\ \hline
+    \end{tabular}
+\end{table}
+
+\end{document}
+
+6.
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\begin{document}
+\begin{figure}[h]
+\centering
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{vtu.jpeg}
+\caption{Image1}
+\label{fig:Image1}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.4\textwidth}
+\includegraphics[width=\textwidth]{vtu.jpeg}
+\caption{Image2}
+\label{fig:Image2}
+\end{subfigure}
+\caption{Side-by-side images}
+\label{fig:side_by_side}
+\end{figure}
+\end{document}
+
+
+7.
+\documentclass{article}
+
+\usepackage{amsmath}  
+\usepackage{graphicx}
+\usepackage[paperheight=8in,
+paperwidth=5in,
+top=15mm,
+bottom=20mm,
+left=20mm,
+right=10mm]{geometry}
+\begin{document}
+$x=\frac{-b\pm \sqrt{{b^{2} - 4ac}}{2a}$\\
+$= -2\frac{\pm \sqrt{2^{2} - 4*(-1)*(-8)}}{2*1}$$
+$$ = \dfrac{-2 \pm \sqrt{4+32}}{2*1}$$
+$$ \varphi^{\lambda}_{\sigma} = \sum_{\Pi\in 
+C_{t}}sgn(\Pi){\varphi^{\lambda}_{\sigma}}{\varphi^{\lambda}_{\Pi}} $$
+$$ = \sum_{\tau\in C_{\sigma}t}sgn(\sigma^{-
+1}{\tau}{\sigma}){\varphi^{\lambda}_{\sigma}}{\varphi^{\lambda}_{\sigma^{-
+1}}{\tau}{\sigma}} $$
+$$ = A_{\sigma}{t}{\varphi^{\lambda}_{\sigma}} $$
+\end{itemize}
+\end{document}
