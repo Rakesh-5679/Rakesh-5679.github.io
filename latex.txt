@@ -166,7 +166,7 @@ SIET, Tumkur\\
 7.
 \documentclass{article}
 
-\usepackage{amsmath}  
+\usepackage{mathtools}  
 \usepackage{graphicx}
 \usepackage[paperheight=8in,
 paperwidth=5in,
@@ -176,13 +176,256 @@ left=20mm,
 right=10mm]{geometry}
 \begin{document}
 $x=\frac{-b\pm \sqrt{{b^{2} - 4ac}}{2a}$\\
-$= -2\frac{\pm \sqrt{2^{2} - 4*(-1)*(-8)}}{2*1}$$
-$$ = \dfrac{-2 \pm \sqrt{4+32}}{2*1}$$
-$$ \varphi^{\lambda}_{\sigma} = \sum_{\Pi\in 
-C_{t}}sgn(\Pi){\varphi^{\lambda}_{\sigma}}{\varphi^{\lambda}_{\Pi}} $$
-$$ = \sum_{\tau\in C_{\sigma}t}sgn(\sigma^{-
-1}{\tau}{\sigma}){\varphi^{\lambda}_{\sigma}}{\varphi^{\lambda}_{\sigma^{-
-1}}{\tau}{\sigma}} $$
-$$ = A_{\sigma}{t}{\varphi^{\lambda}_{\sigma}} $$
+$= -2\frac{\pm \sqrt{2^2} - 4(1)*(-8)}}{2*1}$\\
+$ = -2\frac{\pm \sqrt{4+32}}{2}$\\
+$ \gamma^\lambda}{\sigma{A_T}} = \sum_{\Pi\in {A_t}}sgn({-1}}t\sigma)\gamma^{\lambda}\sigma\gamma^{\lambda}\sigma^{-1}Ta$\\
+$ = \sum_{T\in\gamma_t}sgn(\sigma^{-
+1}T\sigma)}}{\gamma^{\lambda}\sigma{\gamma^{\lambda}{\sigma^-
+1}{T\sigma}$\\
+$ = A_{\sigma t\gamma^{\lambda}}\sigma $\\
+\end{document}
+
+8.
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage{amsthm}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\begin{document}
+\section{Numbered theorems, definitions, corollaries and lemmas}
+Theorems can easily be defined:
+
+\begin{theorem}
+Let \(f\) be a function whose derivative exists in every point, then \(f\) is 
+a continuous function.
+\end{theorem}
+
+\begin{theorem}[Pythagorean theorem]
+\label{pythagorean}
+This is a theorem about right triangles and can be summarised in the next 
+equation 
+\[ x^2 + y^2 = z^2 \]
+\end{theorem}
+
+And a consequence of theorem \ref{pythagorean} is the statement in the next 
+corollary.
+
+\begin{corollary}
+There's no right rectangle whose sides measure 3cm, 4cm, and 6cm.
+\end{corollary}
+
+You can reference theorems such as \ref{pythagorean} when a label is assigned.
+
+\begin{lemma}
+Given two line segments whose lengths are \(a\) and \(b\) respectively there is a 
+real number \(r\) such that \(b=ra\).
+\end{lemma}
+
+\begin{definition}[Absolute value function] 
+The absolute value function can be specified as a two-part definition as follows: \\
+$
+|x| =
+\left\{
+	\begin{array}{ll}
+		x  & \mbox{if } x \geq 0 \\
+		-x & \mbox{if } x < 0
+	\end{array}
+\right.
+$
+\end{definition}
+
+\end{document}
+
+9.
+
+\documentclass{article}
+\usepackage[numbers]{natbib}
+begin{document}
+\title{Document that Consists of Two Paragraphs with a minimum of 10 Citations in it and Displaying the References in the Section}
+\date{}
+\maketitle
+\paragraph{Paragraph 1}
+The theory of relativity has been explored extensively in various scientific papers \citep{authorl, author2, author3}. Einstein's contributions to physics are profound and have paved the way for many modern discoveries \citep{author4, author5}. Researchers continue to investigate the complexities of spacetime and the universe \citep{author6, author7}. These advancements have led to new methods of measurement and analysis in cosmology \citep{author8}.
+\paragraph {Paragraph 2}
+Recent studies have focused on the impact of climate change on various ecosystems \citep{author9, author10}. Scientists are examining how rising temperatures and changing weather patterns affect biodiversity and human health \citep{author11, author12}. Furthermore, interdisciplinary research has brought about innovative solutions for sustainable development \citep{author13}. Collaboration among experts from different fields is essential to address the challenges of global warming \citep{author14}.
+\newpage
+\begin{thebibliography} {99}
+\bibitem{author1} Author One. \textit {Title of Article One}. Journal Name, vol. 10, no. 1, pp. 1-10, 2022.
+\bibitem{author2} Author Two. \textit {Title of Book Two}. Publisher Name, 2021.
+ \bibitem{author3} Author Three. \textit {Title of Conference Paper Three}. In: Proceedings of Conference, pp. 100--110, 2020.
+\bibitem{author4} Author Four. \textit {Title of Article Four}. Journal Name, vol. 9, no. 2, pp.15-25, 2019.
+bibitem{author5} Author Five. \textit{ Title of Book Five}. Publisher Name, 2018.
+\bibitem{author6} Author Six. \textit{Title of Conference Paper Six}. In: Proceedings of Conference, pp. 200--210, 2017.
+\bibitem{author7} Author Seven. \textit(Title of Article Seven). Journal Name, vol. 8, no. 3, pp. 30--40, 2016.
+\bibitem{author8} Author Eight. \textit {Title of Book Eight}. Publisher Name, 2015.
+\bibitem{author9} Author Nine. \textit{Title of Conference Paper Nine}. In: Proceedings of Conference, pp. 300--310, 2014.
+\bibitem{author10} Author Ten. textit {Title of Article Ten}. Journal Name, vol. 7, no. 4, pp. 50-60, 2013.
+\bibitem{author11} Author Eleven. \textit{ Title of Article Eleven}. Journal Name, vol. 6, no.5, pp. 70-80, 2012. \bibitem{author12} Author Twelve. \textit {Title of Article Twelve}. Journal Name, vol. 5, no. 6, pp. 90-100, 2011.
+\bibitem {author13} Author Thirteen. \textit {Title of Book Thirteen}. Publisher Name, 2010.
+\bibitem{author14} Author Fourteen. \textit{Title of Conference Paper Fourteen}. In: Proceedings of Conference, pp. 400--410, 2009.
+\end{thebibliography}
+\end{document}
+ 
+10.
+
+\documentclass{article}
+\usepackage{tikz}
+
+\begin{document}
+
+\begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}[
+        level 1/.style = {sibling distance=7cm},
+        level 2/.style = {sibling distance=5cm},
+        level 3/.style = {sibling distance=25cm},
+        every node/.style = {circle, draw, align=center}
+    ]
+        \node {Root}
+            child { node {Child 1}
+                child { node {Gchild 1} }
+                child { node {Gchild 2} }
+            }
+            child { node {Child 2}
+                child { node {Gchild 3} }
+                child { node {Gchild 4} }
+            };
+    \end{tikzpicture}
+    \caption{Hierarchy Diagram}
+    \label{fig:hierarchy}
+\end{figure}
+
+\end{document}
+
+11.
+\documentclass{article}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\begin{document}
+\begin{algorithm}
+\caption{Euclid's algorithm}
+\label{euclid}
+\begin{algorithmic}[1] 
+\REQUIRE two non-negative integers $a$ and $b$ where $a \geq b$
+\ENSURE $d = \gcd(a, b)$
+\STATE $r \gets a \bmod b$
+\WHILE{$r \neq 0$}
+    \STATE $a \gets b$
+    \STATE $b \gets r$
+    \STATE $r \gets a \bmod b$
+\ENDWHILE
+\RETURN $b$
+\end{algorithmic}
+\end{algorithm}
+
+\end{document}
+
+12.
+\documentclass[6pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=3cm,right=3cm,top=2cm,bottom=2cm]{geometry}
+\author{Lekhaka}
+\title{Varadhi}
+\begin{document}
+
+\maketitle
+\chapter{Free Software}
+\section*{What is Free Software?}
+"\textbf{Free software}" means software that respects users' freedom and community. Roughly, it means that \textbf{the users have the freedom to run, copy, distribute, study, change and improve the software}. Thus, "free software" is a matter of liberty, not price. To understand the concept, you should think of "\textit{free}" as in "\textit{free speech}," not as in "\textit{free beer}." We sometimes call it "\textbf{libre software}," borrowing the French or Spanish word for "free" as in freedom, to show we do not mean the software is gratis.
+
+You may have paid money to get copies of a free program, or you may have obtained copies at no charge. But regardless of how you got your copies, you always have the freedom to copy and change the software, even to sell copies.
+
+We campaign for these freedoms because everyone deserves them. With these freedoms, the users (both individually and collectively) control the program and what it does for them. When users don't control the program, we call it a "\textit{nonfree}" or "\textit{proprietary}" program. The nonfree program controls the users, and the developer controls the program; this makes the program an instrument of unjust power.
+
+"\emph{Open source}" is something different: it has a very different philosophy based on different values. Its practical definition is different too, but nearly all open source programs are in fact free. 
+
+\section*{The Free Software Definition}
+The free software definition presents the criteria for whether a particular software program qualifies as free software. \\
+\textbf{The four essential freedoms}		\\
+
+A program is free software if the program's users have the four essential freedoms:	\\
+\begin{itemize}
+\item The freedom to run the program as you wish, for any purpose (freedom 0).
+\item The freedom to study how the program works, and change it so it does your computing as you wish (freedom 1). Access to the source code is a precondition for this.
+\item The freedom to redistribute copies so you can help others (freedom 2).
+\item The freedom to distribute copies of your modified versions to others (freedom 3). 
+
 \end{itemize}
+
+
+By doing this you can give the whole community a chance to benefit from your changes. Access to the source code is a precondition for this. \\
+
+A program is free software if it gives users adequately all of these freedoms. Otherwise, it is nonfree. While we can distinguish various nonfree distribution schemes in terms of how far they fall short of being free, we consider them all equally unethical.
+
+
+\chapter{Listing Environment}
+
+\begin{small}
+\section*{Unordered lists}
+
+\subsection*{Groceries List}
+\begin{itemize}
+	\item Eggs
+	\item Milk
+	\item Biscuits
+	\item Rice
+\end{itemize}	
+
+\subsection*{Football Teams}
+
+\begin{itemize}
+	\item English Premier League
+	\begin{itemize}
+		\item Manchester United
+		\item Liverpool
+	\end{itemize}
+	
+	\item La Liga
+	\begin{itemize}
+		\item Barcelona
+		\item Real Madrid
+	\end{itemize}	
+
+	\item Bundesliga
+	\begin{itemize}
+		\item Bayern Munich
+		\item Borussia Dortmund
+	\end{itemize}	
+\end{itemize}
+
+\section*{Ordered lists}
+\subsection*{ICC WTC Rankings}
+\begin{enumerate}
+\item India
+\item Australia
+\item New Zealand
+\end{enumerate}
+
+\subsection*{Countries ranked by Market Cap}
+\begin{enumerate}
+	\item Asia
+	\begin{enumerate}
+		\item China
+		\item Japan
+		\item India
+	\end{enumerate}
+
+	\item Europe
+	\begin{enumerate}
+		\item United Kingdom
+		\item France
+		\item Germany
+	\end{enumerate}
+\end{enumerate}
+\end{small}
 \end{document}
